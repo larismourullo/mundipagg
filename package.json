@@ -1,0 +1,37 @@
+{
+  "name": "desafio-mundipagg",
+  "version": "1.0.0",
+  "description": "Project to solve the challenge of Mundipagg.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/larismourullo/desafio-mundipagg.git"
+  },
+  "keywords": [
+    "mundipagg",
+    "desafio",
+    "front-end"
+  ],
+  "author": "Larissa Mourullo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/larismourullo/desafio-mundipagg/issues"
+  },
+  "homepage": "https://github.com/larismourullo/desafio-mundipagg#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-qunit": "^2.0.0",
+    "grunt-contrib-uglify": "^3.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^2.0.0"
+  },
+  "dependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-concat": "^1.0.1"
+  }
+}

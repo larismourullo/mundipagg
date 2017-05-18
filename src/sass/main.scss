@@ -1,0 +1,137 @@
+// Colors
+$red: #ef4043;
+$white: #ffffff;
+$gray: #f6f9fc;
+$blue: #005ca6;
+$light-blue: #49c3ce;
+$dark-blue: #082659;
+
+// Coding
+body {
+	background-color: $gray;
+}
+
+.navbar {
+	background-color: $white;
+	border-top: 5px solid $dark-blue;
+    
+    .container {
+    	height: 40px;
+    	padding: 10px 0px;
+
+    	img {
+    		height: 100%;
+    	}
+    }    
+}
+
+section {
+	margin-bottom: 25px;
+
+	select {
+	    width: 100%;
+	    padding: 5px;
+	}
+
+	.box {
+		background-color: $light-blue;
+		padding: 8px 16px;
+		margin-top: 20px;
+
+		h5 {
+			margin-top: 0em;
+			margin-bottom: 0em;
+			color: $white;
+		}
+
+		p {
+			color: $blue;
+			font-size: 2em;
+		    margin-top: -0.5em;
+		    margin-bottom: -0.2em;
+		}
+
+		.icon {
+			color: $red;
+		    float: right;
+	    	padding: 5px 0px;
+		}
+	}
+
+	.boxcommit {
+		
+		h5 {
+			margin-top: 0em;
+			margin-bottom: 0em;
+		}
+	}
+
+	canvas {
+		margin-top: 25px;
+	}
+
+}
+
+footer {	
+	background-color: $dark-blue;
+	bottom: 0;
+    width: 100%;
+
+	.container {
+		width: 85% !important;
+	    padding: 10px 0px 15px 0px;
+	}
+
+	small, span {
+		font-size: 10px;
+		color: $white;
+	}
+
+	#iconfooter {
+		float: right;
+	    text-align: right;
+
+		a, a:hover, a:active, a:visited {
+			margin: 0px 10px;
+			-webkit-transition: all 0.4s ease-in-out;
+		    -moz-transition: all 0.4s ease-in-out;
+		    transition: all 0.4s ease-in-out;
+
+			i {
+				color: $white;
+			}
+		}
+
+		a:hover, a:active {
+			opacity: 0.7;				
+		}
+	}
+
+}
+
+@media(min-width: 720px) 
+{
+	footer {
+		position: absolute;
+	}
+}
+
+@media(max-width: 981px) 
+{
+	footer {
+		text-align: center;
+
+		#iconfooter {
+		    width: 160px;
+		    float: none;
+		    margin-left: auto;
+	    	margin-right: auto;
+		}
+
+		#mundifooter {
+			float: none;
+		    margin-left: auto;
+		    margin-right: auto;
+		}
+	}	
+}
