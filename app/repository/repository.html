@@ -1,0 +1,42 @@
+<section>
+    <div class="container">   
+        <div class="row">
+            <h3>Github Mundipagg</h3>               
+        </div>      
+
+        <div class="row" ng-controller="RepositoryController as vm">
+            <div class="col-4">
+                <select ng-options="repo as repo.name for repo in vm.repository" 
+                    ng-model="vm.repoSelect" ng-change="vm.updateData()"></select>  
+
+                <div class="box">
+                    <i class="fa fa-star fa-3x icon" aria-hidden="true"></i>
+                    <h5 class="font-light">Total Stars</h5>
+                    <p class="font-heavy">{{vm.repoSelect.stargazers_count}}</p>
+                </div>
+
+                <div class="box">
+                    <i class="fa fa-code-fork fa-3x icon" aria-hidden="true"></i>
+                    <h5 class="font-light">Total Forks</h5>
+                    <p class="font-heavy">{{vm.repoSelect.forks}}</p>
+                </div>
+
+                <div class="box">
+                    <i class="fa fa-user fa-3x icon" aria-hidden="true"></i>
+                    <h5 class="font-light">Total Contributors</h5>
+                    <p class="font-heavy">{{vm.contributorsNumber}}</p>
+                </div>
+            </div>
+
+            <div class="col-8">
+                <div class="boxcommit">
+                    <h5>Commits</h5>
+                    <canvas id="base" class="chart-bar" chart-data="[vm.data]"
+                            chart-labels="vm.labels" chart-colors="vm.colors"
+                            chart-dataset-override="vm.datasetOverride" height="105px"></canvas>
+                            </canvas> 
+                </div>                  
+            </div>
+        </div>          
+    </div>
+</section>
