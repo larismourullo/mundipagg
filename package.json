@@ -4,7 +4,7 @@
   "description": "Project to solve the challenge of Mundipagg.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "grunt test"
   },
   "repository": {
     "type": "git",
@@ -22,11 +22,22 @@
   },
   "homepage": "https://github.com/larismourullo/desafio-mundipagg#readme",
   "devDependencies": {
+    "angular": "^1.6.4",
+    "angular-chart.js": "^1.1.1",
+    "angular-mocks": "^1.6.4",
+    "angular-ui-router": "^1.0.3",
+    "chart.js": "^2.5.0",
     "grunt": "^1.0.1",
     "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-uglify": "^3.0.0",
     "grunt-contrib-watch": "^1.0.0",
-    "grunt-sass": "^2.0.0"
+    "grunt-sass": "^2.0.0",
+    "jasmine-core": "^2.6.2",
+    "karma": "^1.7.0",
+    "karma-chrome-launcher": "^2.1.1",
+    "karma-cli": "^1.0.1",
+    "karma-jasmine": "^1.1.0",
+    "karma-spec-reporter": "0.0.31"
   },
   "dependencies": {
     "grunt": "^1.0.1",
