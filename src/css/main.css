@@ -3,7 +3,7 @@ body {
 
 .navbar {
   background-color: #ffffff;
-  border-top: 5px solid #082659; }
+  border-top: 35px solid #188278; }
   .navbar .container {
     height: 40px;
     padding: 10px 0px; }
@@ -16,7 +16,7 @@ section {
     width: 100%;
     padding: 5px; }
   section .box {
-    background-color: #49c3ce;
+    background-color: #00b9b5;
     padding: 8px 16px;
     margin-top: 20px; }
     section .box h5 {
@@ -24,12 +24,12 @@ section {
       margin-bottom: 0em;
       color: #ffffff; }
     section .box p {
-      color: #005ca6;
+      color: #188278;
       font-size: 2em;
       margin-top: -0.5em;
       margin-bottom: -0.2em; }
     section .box .icon {
-      color: #ef4043;
+      color: #082659;
       float: right;
       padding: 5px 0px; }
   section .boxcommit h5 {
@@ -39,7 +39,7 @@ section {
     margin-top: 25px; }
 
 footer {
-  background-color: #082659;
+  background-color: #aaaaaa;
   bottom: 0;
   width: 100%; }
   footer .container {
@@ -55,7 +55,8 @@ footer {
       margin: 0px 10px;
       -webkit-transition: all 0.4s ease-in-out;
       -moz-transition: all 0.4s ease-in-out;
-      transition: all 0.4s ease-in-out; }
+      transition: all 0.4s ease-in-out;
+      text-decoration: none; }
       footer #iconfooter a i, footer #iconfooter a:hover i, footer #iconfooter a:active i, footer #iconfooter a:visited i {
         color: #ffffff; }
     footer #iconfooter a:hover, footer #iconfooter a:active {
