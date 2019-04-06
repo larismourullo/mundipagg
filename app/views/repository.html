@@ -5,7 +5,8 @@
 		</div>
 		<div class="row" ng-controller="RepositoryController as vm">
 			<div class="col-4">
-				<select ng-options="repo as repo.name for repo in vm.repository" ng-model="vm.repoSelect" ng-change="vm.updateData()">
+				<select ng-options="repo as repo.name for repo in vm.repository" ng-model="vm.repoSelect"
+					ng-change="vm.updateData()">
 				</select>
 				<div class="section__box">
 					<i class="fa fa-star fa-3x box__icon" aria-hidden="true"></i>
@@ -27,7 +28,7 @@
 				<div class="section__commits">
 					<h5>Commits</h5>
 					<canvas id="base" class="chart-bar" chart-data="[vm.data]" chart-labels="vm.labels" chart-colors="vm.colors"
-					 chart-dataset-override="vm.datasetOverride" height="105px"></canvas>
+						chart-dataset-override="vm.datasetOverride" height="105px"></canvas>
 					</canvas>
 				</div>
 			</div>
