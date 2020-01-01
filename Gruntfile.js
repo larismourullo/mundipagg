@@ -20,9 +20,6 @@ module.exports = function(grunt) {
         dest: 'dist/<%= pkg.name %>.min.js'
       }
     },
-    qunit: {
-      files: ['test/**/*.html']
-    },
     sass: {
       options: {
         sourceMap: true

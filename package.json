@@ -4,7 +4,7 @@
   "description": "Project to solve the challenge of Mundipagg.",
   "main": "index.js",
   "scripts": {
-    "test": "grunt test"
+    "test": "karma start"
   },
   "repository": {
     "type": "git",
