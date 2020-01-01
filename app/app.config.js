@@ -2,8 +2,8 @@
 
 	angular
     	.module("app")
-    	.constant("urlBase", "https://api.github.com/")
-    	.constant("organization", "mundipagg");
-    	
+    	.constant("urlBaseUsers", "https://api.github.com/users/")
+    	.constant("urlBaseRepos", "https://api.github.com/repos/")
+    	.constant("organization", "mundipagg/");
   
 }());
