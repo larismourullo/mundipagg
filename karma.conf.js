@@ -23,11 +23,11 @@ module.exports = function(config) {
         './app/app.module.js',
         './app/app.config.js',
         './app/services/apiCommits.js',
-        './app/services/apiCommits.spec.js',
+        './app/test/apiCommits.spec.js',
         './app/services/apiContributors.js',
-        './app/services/apiContributors.spec.js',
+        './app/test/apiContributors.spec.js',
         './app/services/apiRepositories.js',
-        './app/services/apiRepositories.spec.js'
+        './app/test/apiRepositories.spec.js'
     ],
 
 
