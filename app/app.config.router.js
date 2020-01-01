@@ -11,7 +11,7 @@
         $stateProvider
             .state("shell", { 
                     url: "",
-                    templateUrl: "app/shell/shell.html",
+                    templateUrl: "app/views/shell.html",
                     abstract: true,
                     controllerAs: "vm"
                 })
@@ -19,7 +19,7 @@
                 .state("repository", {
                     parent: "shell",
                     url: "/",
-                    templateUrl: "app/repository/repository.html"
+                    templateUrl: "app/views/repository.html"
                 })
         ;
 
