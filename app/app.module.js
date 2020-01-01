@@ -1,12 +1,9 @@
 (function () {
+  angular
+    .module("app", ["chart.js", "ui.router"])
+    .run(inicializarApp);
 
-    angular
-        .module("app", ["chart.js", "ui.router"])
-        .run(inicializarApp);
+  inicializarApp.$inject = [];
 
-    inicializarApp.$inject = [];
-
-    function inicializarApp() {
-    }
-
+  function inicializarApp() { }
 })();
