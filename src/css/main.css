@@ -1,0 +1,81 @@
+body {
+  background-color: #f6f9fc; }
+
+.navbar {
+  background-color: #ffffff;
+  border-top: 5px solid #082659; }
+  .navbar .container {
+    height: 40px;
+    padding: 10px 0px; }
+    .navbar .container img {
+      height: 100%; }
+
+section {
+  margin-bottom: 25px; }
+  section select {
+    width: 100%;
+    padding: 5px; }
+  section .box {
+    background-color: #49c3ce;
+    padding: 8px 16px;
+    margin-top: 20px; }
+    section .box h5 {
+      margin-top: 0em;
+      margin-bottom: 0em;
+      color: #ffffff; }
+    section .box p {
+      color: #005ca6;
+      font-size: 2em;
+      margin-top: -0.5em;
+      margin-bottom: -0.2em; }
+    section .box .icon {
+      color: #ef4043;
+      float: right;
+      padding: 5px 0px; }
+  section .boxcommit h5 {
+    margin-top: 0em;
+    margin-bottom: 0em; }
+  section canvas {
+    margin-top: 25px; }
+
+footer {
+  background-color: #082659;
+  bottom: 0;
+  width: 100%; }
+  footer .container {
+    width: 85% !important;
+    padding: 10px 0px 15px 0px; }
+  footer small, footer span {
+    font-size: 10px;
+    color: #ffffff; }
+  footer #iconfooter {
+    float: right;
+    text-align: right; }
+    footer #iconfooter a, footer #iconfooter a:hover, footer #iconfooter a:active, footer #iconfooter a:visited {
+      margin: 0px 10px;
+      -webkit-transition: all 0.4s ease-in-out;
+      -moz-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out; }
+      footer #iconfooter a i, footer #iconfooter a:hover i, footer #iconfooter a:active i, footer #iconfooter a:visited i {
+        color: #ffffff; }
+    footer #iconfooter a:hover, footer #iconfooter a:active {
+      opacity: 0.7; }
+
+@media (min-width: 720px) {
+  footer {
+    position: absolute; } }
+
+@media (max-width: 981px) {
+  footer {
+    text-align: center; }
+    footer #iconfooter {
+      width: 160px;
+      float: none;
+      margin-left: auto;
+      margin-right: auto; }
+    footer #mundifooter {
+      float: none;
+      margin-left: auto;
+      margin-right: auto; } }
+
+/*# sourceMappingURL=main.css.map */

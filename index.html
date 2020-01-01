@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app="app">
+<head>
+	<title>Github MundiPagg</title>
+
+	<!-- Meta Tags -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- CSS -->
+	<link rel="stylesheet" href="src/css/main.css">
+	<link rel="stylesheet" href="src/css/simple-grid.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div ui-view></div>
+    
+    <!-- AngularJs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
+
+    <!-- App -->
+    <script src="app/app.module.js"></script>
+    <script src="app/app.config.router.js"></script>
+    <script src="app/repository/repositoryController.js"></script>    
+
+    <!-- ChartJs -->        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-chart.js/1.1.1/angular-chart.min.js"></script>
+</body>
+</html>
