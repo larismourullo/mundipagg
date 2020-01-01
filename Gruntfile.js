@@ -35,8 +35,8 @@ module.exports = function(grunt) {
     },
     watch: {
       css: {
-        files: '**/*.scss',
-        tasks: ['sass']
+        files: '**/*.scss', '**/*.js',
+        tasks: ['sass', 'uglify', 'cssmin']
       }
     },
     cssmin: {
@@ -48,6 +48,8 @@ module.exports = function(grunt) {
         files: {
           'dist/css/main.min.css': 'src/css/main.css',
           'dist/css/simple-grid.min.css': 'src/css/simple-grid.css'
+          'dist/sass/main.min.css': 'src/sass/main.scss',
+          'dist/sass/simple-grid.min.css': 'src/sass/simple-grid.scss'
         }
       }
     }
@@ -61,7 +63,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-sass');
 
   // Default task.
-  grunt.registerTask('default', ['watch']);
-  grunt.registerTask('build', ['sass', 'uglify', 'cssmin']);
+  grunt.registerTask('default', ['sass', 'uglify', 'cssmin']);
+  grunt.registerTask('watch', ['watch']);
 
 };
