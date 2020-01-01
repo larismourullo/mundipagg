@@ -1,5 +1,5 @@
 /*global module:false*/
-module.exports = function(grunt) {
+module.exports = function (grunt) {
 
   // Project configuration.
   grunt.initConfig({
@@ -19,7 +19,7 @@ module.exports = function(grunt) {
           'dist/script/services/apiCommits.min.js': 'app/services/apiCommits.js',
           'dist/script/services/apiRepositories.min.js': 'app/services/apiRepositories.js',
           'dist/script/services/apiContributors.min.js': 'app/services/apiContributors.js',
-        }        
+        }
       }
     },
     sass: {
@@ -35,7 +35,7 @@ module.exports = function(grunt) {
     },
     watch: {
       css: {
-        files: '**/*.scss', '**/*.js',
+        files: ['**/*.scss', '**/*.js'],
         tasks: ['sass', 'uglify', 'cssmin']
       }
     },
@@ -47,7 +47,7 @@ module.exports = function(grunt) {
       target: {
         files: {
           'dist/css/main.min.css': 'src/css/main.css',
-          'dist/css/simple-grid.min.css': 'src/css/simple-grid.css'
+          'dist/css/simple-grid.min.css': 'src/css/simple-grid.css',
           'dist/sass/main.min.css': 'src/sass/main.scss',
           'dist/sass/simple-grid.min.css': 'src/sass/simple-grid.scss'
         }
