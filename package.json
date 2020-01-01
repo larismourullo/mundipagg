@@ -1,5 +1,5 @@
 {
-  "name": "desafio-mundipagg",
+  "name": "Mundipagg",
   "version": "1.0.0",
   "description": "Project to solve the challenge of Mundipagg.",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/larismourullo/desafio-mundipagg.git"
+    "url": "git+https://github.com/larismourullo/mundipagg.git"
   },
   "keywords": [
     "mundipagg",
@@ -18,9 +18,9 @@
   "author": "Larissa Mourullo",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/larismourullo/desafio-mundipagg/issues"
+    "url": "https://github.com/larismourullo/mundipagg/issues"
   },
-  "homepage": "https://github.com/larismourullo/desafio-mundipagg#readme",
+  "homepage": "https://github.com/larismourullo/mundipagg#readme",
   "devDependencies": {
     "angular": "^1.7.9",
     "angular-chart.js": "^1.1.1",
