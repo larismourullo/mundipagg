@@ -6,7 +6,7 @@
     var vm = this;
 
     vm.repository = [];
-    vm.colors = ['#082659', '#00b9b5', '#707070'];
+    vm.colors = ['#73b3ac'];
     vm.labels = [];
     vm.data = [];
     vm.datasetOverride = [

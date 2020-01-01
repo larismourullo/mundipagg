@@ -1,12 +1,10 @@
 body {
-  background-color: #f6f9fc; }
+  background-color: #ffffff; }
 
 .navbar {
-  background-color: #ffffff;
-  border-top: 35px solid #188278; }
+  background-color: #082558; }
   .navbar .navbar__container {
-    height: 40px;
-    padding: 10px 0px; }
+    padding: 20px 0px; }
   .navbar .navbar__image {
     height: 100%; }
 
@@ -14,37 +12,32 @@ section {
   margin-bottom: 25px; }
   section select {
     width: 100%;
-    padding: 5px; }
+    padding: 5px;
+    border: 1px solid #d3d7de;
+    border-radius: 5px; }
   section .section__box {
-    background-color: #00b9b5;
+    border: 1px solid #d3d7de;
+    border-radius: 5px;
     padding: 8px 16px;
     margin-top: 20px; }
-    section .section__box h5 {
-      margin-top: 0em;
-      margin-bottom: 0em;
-      color: #ffffff; }
     section .section__box p {
-      color: #188278;
+      color: #73b3ac;
       font-size: 2em;
       margin-top: -0.5em;
       margin-bottom: -0.2em; }
     section .section__box .box__icon {
-      color: #082659;
+      color: #178176;
       float: right;
       padding: 5px 0px; }
-  section .section__commits h5 {
-    margin-top: 0em;
-    margin-bottom: 0em; }
   section canvas {
     margin-top: 25px; }
 
 footer {
-  background-color: #aaaaaa;
+  background-color: #082558;
   bottom: 0;
   width: 100%; }
   footer .footer__container {
-    width: 85% !important;
-    padding: 10px 0px 15px 0px; }
+    padding: 30px 0px 60px 0px; }
   footer small,
   footer span {
     font-size: 10px;

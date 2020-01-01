@@ -1,24 +1,23 @@
 // Colors
 $white: #ffffff;
-$light-gray: #f6f9fc;
-$gray: #aaaaaa;
-$dark-grey: #707070;
-$turquoise: #00b9b5;
-$dark-turquoise: #188278;
-$blue: #082659;
+$light-gray:#d3d7de;
+$gray: #707070;
+$dark-gray: #272a2d;
+$light-turquoise:#7ccecd;
+$turquoise: #73b3ac;
+$dark-turquoise: #178176;
+$blue: #082558;
 
 // Coding
 body {
-  background-color: $light-gray;
+  background-color: $white;
 }
 
 .navbar {
-  background-color: $white;
-  border-top: 35px solid $dark-turquoise;
+  background-color: $blue;
 
   .navbar__container {
-    height: 40px;
-    padding: 10px 0px;
+    padding: 20px 0px;
   }
 
   .navbar__image {
@@ -32,37 +31,27 @@ section {
   select {
     width: 100%;
     padding: 5px;
+    border: 1px solid $light-gray;
+    border-radius: 5px; 
   }
 
   .section__box {
-    background-color: $turquoise;
+    border: 1px solid $light-gray;
+    border-radius: 5px; 
     padding: 8px 16px;
     margin-top: 20px;
 
-    h5 {
-      margin-top: 0em;
-      margin-bottom: 0em;
-      color: $white;
-    }
-
     p {
-      color: $dark-turquoise;
+      color: $turquoise;
       font-size: 2em;
       margin-top: -0.5em;
       margin-bottom: -0.2em;
     }
 
     .box__icon {
-      color: $blue;
+      color: $dark-turquoise;
       float: right;
       padding: 5px 0px;
-    }
-  }
-
-  .section__commits {
-    h5 {
-      margin-top: 0em;
-      margin-bottom: 0em;
     }
   }
 
@@ -72,13 +61,12 @@ section {
 }
 
 footer {
-  background-color: $gray;
+  background-color: $blue;
   bottom: 0;
   width: 100%;
 
   .footer__container {
-    width: 85% !important;
-    padding: 10px 0px 15px 0px;
+    padding: 30px 0px 60px 0px;
   }
 
   small,
