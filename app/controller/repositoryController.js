@@ -4,9 +4,9 @@
         .module("app")
         .controller("RepositoryController", repositoryController);
 
-    repositoryController.$inject = ["$http"];
+    repositoryController.$inject = ["$http", "apiRepositories", "apiContributors", "apiCommits"];
 
-    function repositoryController($http) {
+    function repositoryController($http, apiRepositories, apiContributors, apiCommits) {
         var vm = this;
         vm.repository = [];
 
@@ -24,11 +24,9 @@
         // ------------- Fim Variáveis Canvas ------------- //
         
         function updateCommit() {
-            var commitURL = "https://api.github.com/repos/mundipagg/" + vm.repoSelect.name + "/commits"; 
-
-            $http
-                .get(commitURL)
-                .then(function (response) {          
+            apiCommits
+                .getCommits(vm.repoSelect.name)
+                .then(function (response) { 
 
                     // Reset Array                         
                     vm.labels = [];
@@ -56,32 +54,28 @@
                     }
 
                     vm.data.push(countCommits);
-                    vm.data.push(0);                                
-   
-            });
+                    vm.data.push(0);   
+                }
+            );
         }
 
         vm.updateData = function() {
-            var contributorsURL = vm.repoSelect.contributors_url;            
-
-            $http
-                .get(contributorsURL)
+            apiContributors
+                .getContributors(vm.repoSelect.name)
                 .then(function (response) {
                     vm.contributorsNumber = response.data.length;                    
-            });   
+                }
+            );  
 
             updateCommit();         
         }
 
         function getRepository() {
-            var baseURL = "https://api.github.com/users/mundipagg/repos";
-
-            $http
-                .get(baseURL)
+            apiRepositories
+                .allRepositories()
                 .then(function (response) {
                     vm.repository = response.data;
                     vm.repoSelect = vm.repository[0];
-
                     vm.updateData();                    
             });
         }   
