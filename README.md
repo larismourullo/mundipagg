@@ -57,7 +57,11 @@ npm install
 ```
 
 ## Implementação
-
+Basicamente você deverá escrever seu código e enquanto você efetua alterações no arquivo é necessário deixar o comando abaixo rodando:
+``` node
+grunt watch
+```
+O código irá rodar o plugin **watch**, que acoplado nele possuí as *tasks* **sass**, **uglify**, **cssmin**, sendo assim toda alteração de código será automáticamente convertida e minificada. Mas caso deseje, poderá efetuar todas as *tasks* apenas uma vez ou só quando desejar, para isso basta usar apenas `grunt` no terminal.
 
 ## Testes
 Já para os testes será necessário que rode o seguinte comando **node** dentro da pasta do repositório:
