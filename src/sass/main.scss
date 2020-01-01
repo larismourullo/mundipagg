@@ -1,40 +1,41 @@
 // Colors
-$red: #ef4043;
 $white: #ffffff;
-$gray: #f6f9fc;
-$blue: #005ca6;
-$light-blue: #49c3ce;
-$dark-blue: #082659;
+$light-gray: #f6f9fc;
+$gray: #aaaaaa;
+$dark-grey: #707070;
+$turquoise: #00b9b5;
+$dark-turquoise: #188278;
+$blue: #082659;
 
 // Coding
 body {
-	background-color: $gray;
+	background-color: $light-gray;
 }
 
 .navbar {
 	background-color: $white;
-	border-top: 5px solid $dark-blue;
+	border-top: 35px solid $dark-turquoise;
     
-    .container {
-    	height: 40px;
-    	padding: 10px 0px;
+  .container {
+    height: 40px;
+    padding: 10px 0px;
 
-    	img {
-    		height: 100%;
-    	}
-    }    
+    img {
+      height: 100%;
+    }
+  }    
 }
 
 section {
 	margin-bottom: 25px;
 
 	select {
-	    width: 100%;
-	    padding: 5px;
+    width: 100%;
+    padding: 5px;
 	}
 
 	.box {
-		background-color: $light-blue;
+		background-color: $turquoise;
 		padding: 8px 16px;
 		margin-top: 20px;
 
@@ -45,21 +46,20 @@ section {
 		}
 
 		p {
-			color: $blue;
+			color: $dark-turquoise;
 			font-size: 2em;
-		    margin-top: -0.5em;
-		    margin-bottom: -0.2em;
+      margin-top: -0.5em;
+      margin-bottom: -0.2em;
 		}
 
 		.icon {
-			color: $red;
-		    float: right;
-	    	padding: 5px 0px;
+			color: $blue;
+      float: right;
+      padding: 5px 0px;
 		}
 	}
 
 	.boxcommit {
-		
 		h5 {
 			margin-top: 0em;
 			margin-bottom: 0em;
@@ -69,17 +69,16 @@ section {
 	canvas {
 		margin-top: 25px;
 	}
-
 }
 
 footer {	
-	background-color: $dark-blue;
+	background-color: $gray;
 	bottom: 0;
-    width: 100%;
+	width: 100%;
 
 	.container {
 		width: 85% !important;
-	    padding: 10px 0px 15px 0px;
+    padding: 10px 0px 15px 0px;
 	}
 
 	small, span {
@@ -89,13 +88,14 @@ footer {
 
 	#iconfooter {
 		float: right;
-	    text-align: right;
+		text-align: right;
 
 		a, a:hover, a:active, a:visited {
 			margin: 0px 10px;
 			-webkit-transition: all 0.4s ease-in-out;
-		    -moz-transition: all 0.4s ease-in-out;
-		    transition: all 0.4s ease-in-out;
+      -moz-transition: all 0.4s ease-in-out;
+			transition: all 0.4s ease-in-out;
+			text-decoration: none;
 
 			i {
 				color: $white;
@@ -109,29 +109,27 @@ footer {
 
 }
 
-@media(min-width: 720px) 
-{
+@media(min-width: 720px) {
 	footer {
 		position: absolute;
 	}
 }
 
-@media(max-width: 981px) 
-{
+@media(max-width: 981px) {
 	footer {
 		text-align: center;
 
 		#iconfooter {
-		    width: 160px;
-		    float: none;
-		    margin-left: auto;
-	    	margin-right: auto;
+      width: 160px;
+      float: none;
+      margin-left: auto;
+      margin-right: auto;
 		}
 
 		#mundifooter {
 			float: none;
-		    margin-left: auto;
-		    margin-right: auto;
+      margin-left: auto;
+      margin-right: auto;
 		}
 	}	
 }
